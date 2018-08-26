@@ -5,26 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test</title>
     <style>
-      body {
-        background-color: grey;
-        
-      }
-      header {
-        color: blue;
-      }
+
+ html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+ }
+
+body {
+	background-color: grey;
+}
+
+header {
+	position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    z-index:99;
+	background-color: lightblue;
+}
+
+#main {
+	background-color: lightgreen;
+	height: 1300px;
+	margin-top: 50px;
+    overflow: auto;
+}
+
+
     </style>
   </head>
   
-  <body>
-    <div id="wrapper">
-        <header>
-          Header
-        </header>
+<body>
 
-        <div id="container">
-Container
-        </div>
-    </div>
-  </body>
+<div id="wrapper">
+	<header>
+		Header
+	</header>
+
+	<div id="main">
+		main
+	</div>
+</div>
+
+</body>
 </html>
 
